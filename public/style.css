@@ -278,7 +278,7 @@ button:hover {
       right: 10px; /* Adjust button for smaller screens */
     }
     .dots-container {
-      bottom: 27px;
+      bottom: 74px;
     }
     #noCitiesMessage{
       font-size: 30px;
@@ -312,7 +312,7 @@ button:hover {
       right: 5px;
     }
     .dots-container {
-      bottom: 29px;
+      bottom: 55px;
     }
     .city img{
       height: 14rem;
