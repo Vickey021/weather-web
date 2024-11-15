@@ -1,4 +1,4 @@
-# Weather App
+# Weather App with Real time data 
 
 Welcome to my Weather App! This web application allows users to easily check the current weather for any city of their choice.
 Built with a focus on simplicity, responsiveness, and performance, this app provides real-time weather data in a clean and user-friendly interface.
