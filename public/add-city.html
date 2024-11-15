@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add City</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add a New City</h2>
+        
+        <!-- Search Bar with Beautiful Design -->
+        <div class="search-container">
+            <label for="searchCity">Search City:</label>
+            <input type="text" id="searchCity" placeholder="Enter city name to search">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- City Details Section -->
+        <div id="cityDetails" class="city-details">
+            <p id="cityName"></p>
+            <img id="cityIcon" src="" alt="City Weather Icon" style="width: 100px;">
+            <p id="cityTemp"></p>
+            <p id="cityCloudCondition"></p>
+            <p id="cityHumidity"></p>
+            <p id="cityWindSpeed"></p>
+            <button id="saveCityBtn">Save City</button>
+        </div>
+
+        <button id="backToMainBtn" class="back-btn">Back to Main Page</button>
+
+        <h3>Added Cities</h3>
+        <div id="cityListContainer" class="city-list"></div>
+    </div>
+
+    <script src="add-city.js"></script>
+</body>
+</html>
+<!-- bc5b874cda28e081c86afb157849caac -->

@@ -1,0 +1,296 @@
+/* style for add-city page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.city-details {
+    display: none;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.city-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.city-item {
+    background-color: #fafafa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.city-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+.back-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #218838;
+} 
+
+
+/* style for main page  */
+
+/* Swipeable Container */
+.cities-slider-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-color: rgba(180, 164, 164, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  .cities-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+  
+  .city {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .city h3 {
+    font-size: 4rem;                             /* Larger text for desktops */
+    font-weight: bold;
+    margin-top: 0rem;
+  }
+  
+  .city img {
+    width: 9rem;
+    height: 9rem;
+    /* display: none; */
+  }
+  
+  .city p {
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 4px;
+    
+  }
+  
+  .city .temp {
+    font-size: 5rem;                             /* Large temperature text */
+  }
+  .cloud-condition{
+    font-weight: bold;
+  }
+  
+  /* Dots Navigation */
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #1b1313;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #007bff;
+  }
+  
+  /* Add City Button */
+  #addCityBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  #addCityBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    /* For large screens (tablets, smaller desktops) */
+    .city h3 {
+      font-size: 3rem;
+     
+    }
+    .city .temp {
+      font-size: 6rem;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    /* For tablets */
+    .city h3 {
+      font-size: 2.5rem;
+    }
+    .city .temp {
+      font-size: 5rem;
+    }
+    .dots-container {
+      bottom: 10px; /* Adjust dots position for tablets */
+    }
+    #addCityBtn {
+      font-size: 0.9rem; /* Slightly smaller button */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* For medium screens (small tablets, large smartphones) */
+    .city h3 {
+      font-size: 2rem;
+    }
+    .city .temp {
+      font-size: 4rem;
+    }
+    #addCityBtn {
+      font-size: 0.8rem;
+      top: 10px;
+      right: 10px; /* Adjust button for smaller screens */
+    }
+    .dots-container {
+      bottom: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* For small screens (smartphones) */
+    .city h3 {
+      font-size: 1.6rem;
+    }
+    .city .temp {
+      font-size: 3.5rem;
+    }
+    .city p {
+      font-size: 14px;
+      padding: 4px; /* Adjust text size for mobile */
+    }
+    #addCityBtn {
+      font-size: 0.7rem;
+      top: 5px;
+      right: 5px;
+    }
+    .dots-container {
+      bottom: 3px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    /* For very small screens (smaller smartphones) */
+    .city h3 {
+      font-size: 1.4rem;
+    }
+    .city .temp {
+      font-size: 3rem;
+    }
+    .city p {
+      font-size: 13px;
+      padding: 4px;
+    }
+    #addCityBtn {
+      font-size: 0.6rem;
+      padding: 8px 16px;
+    }
+  }
+  
