@@ -121,7 +121,7 @@ button:hover {
     overflow: hidden;
     position: relative;
     text-align: center;
-    background-color: aqua; 
+    background-image: linear-gradient(to bottom, #c1f3f3, #f9dd12);
   }
   
   .cities-container {
