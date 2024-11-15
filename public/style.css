@@ -278,24 +278,33 @@ button:hover {
       right: 10px; /* Adjust button for smaller screens */
     }
     .dots-container {
-      bottom: 5px;
+      bottom: 27px;
     }
     #noCitiesMessage{
       font-size: 30px;
+    }
+    .city img{
+      height: 14rem;
+      width: 14rem;
+    }
+    .city p{
+      padding: 12px;
+      font-size: 2rem;
     }
   }
   
   @media (max-width: 480px) {
     /* For small screens (smartphones) */
     .city h3 {
-      font-size: 1.6rem;
+      font-size: 2.5rem;
     }
     .city .temp {
       font-size: 3.5rem;
+      margin-top: 1rem;
     }
     .city p {
-      font-size: 14px;
-      padding: 4px; /* Adjust text size for mobile */
+      font-size: 33px;
+      padding: 12px; /* Adjust text size for mobile */
     }
     #addCityBtn {
       font-size: 0.7rem;
@@ -303,25 +312,33 @@ button:hover {
       right: 5px;
     }
     .dots-container {
-      bottom: 3px;
+      bottom: 29px;
+    }
+    .city img{
+      height: 14rem;
+      width: 14rem;
     }
   }
   
   @media (max-width: 375px) {
     /* For very small screens (smaller smartphones) */
     .city h3 {
-      font-size: 1.4rem;
+      font-size: 2.3rem;
     }
     .city .temp {
       font-size: 3rem;
     }
     .city p {
-      font-size: 13px;
-      padding: 4px;
+      font-size: 25px;
+      padding: 21px;
     }
     #addCityBtn {
       font-size: 0.6rem;
       padding: 8px 16px;
+    }
+    .city img{
+      height: 14rem;
+      width: 14rem;
     }
   }
   
