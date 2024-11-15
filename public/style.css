@@ -121,9 +121,7 @@ button:hover {
     overflow: hidden;
     position: relative;
     text-align: center;
-    background-color: rgba(180, 164, 164, 0.8);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   
+    background-color: coral 
   }
   
   .cities-container {
@@ -268,6 +266,7 @@ button:hover {
     /* For medium screens (small tablets, large smartphones) */
     .city h3 {
       font-size: 2rem;
+      margin-top: 4rem;
     }
     .city .temp {
       font-size: 4rem;
@@ -278,7 +277,7 @@ button:hover {
       right: 10px; /* Adjust button for smaller screens */
     }
     .dots-container {
-      bottom: 74px;
+      bottom: 38rem;
     }
     #noCitiesMessage{
       font-size: 30px;
@@ -312,7 +311,7 @@ button:hover {
       right: 5px;
     }
     .dots-container {
-      bottom: 55px;
+      bottom: 38rem;
     }
     .city img{
       height: 14rem;
