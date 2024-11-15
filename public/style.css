@@ -48,6 +48,9 @@ button:hover {
     background-color: #0056b3;
 }
 
+
+
+
 .city-details {
     display: none;
     text-align: center;
@@ -206,7 +209,26 @@ button:hover {
     background-color: #0056b3;
   }
   
-  
+  /* Center the message when no cities are added */
+/* Ensure citiesContainer has a relative position for centering */
+#citiesContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust the height based on your layout */
+}
+
+/* Specific styles for the 'No cities added' message */
+#noCitiesMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: red;
+  text-align: center;
+}
+
+
   
   /* Responsive Styles */
   @media (max-width: 1200px) {
@@ -217,6 +239,9 @@ button:hover {
     }
     .city .temp {
       font-size: 6rem;
+    }
+    #noCitiesMessage{
+      font-size: 31px;
     }
   }
   
@@ -233,6 +258,9 @@ button:hover {
     }
     #addCityBtn {
       font-size: 0.9rem; /* Slightly smaller button */
+    }
+    #noCitiesMessage{
+      font-size: 25px;
     }
   }
   
@@ -251,6 +279,9 @@ button:hover {
     }
     .dots-container {
       bottom: 5px;
+    }
+    #noCitiesMessage{
+      font-size: 30px;
     }
   }
   
