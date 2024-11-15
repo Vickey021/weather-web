@@ -15,7 +15,7 @@ function displayCities() {
 
     // If no cities have been added, show a message
     if (cities.length === 0) {
-        citiesContainer.innerHTML = "<p>No cities added yet. Please add a city.</p>";
+        citiesContainer.innerHTML = "<p  id='noCitiesMessage'>No cities added yet. Please add a city.</p>";
     } else {
         const cityElements = cities.map(city => `
             <div class="city">
