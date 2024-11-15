@@ -5,7 +5,7 @@ Built with a focus on simplicity, responsiveness, and performance, this app prov
 
 ## Live Version
 
-Check out the live version of the app here: [Weather App Live]()
+Check out the live version of the app here: [Weather App Live](https://weather-web-lac.vercel.app)
 
 ## Features
 Real-time weather information: Get live weather updates from any city.
